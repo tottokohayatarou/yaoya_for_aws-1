@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
-h1 {
-  margin-bottom: 35px;
-}
 
+h1 {
+  font-family: serif;
+  margin-bottom: 20px;
+}
 .container {
   display: flex;
 }
@@ -16,27 +17,20 @@ main {
   border-radius: 2px;
 }
 
+.product-detail {
+  display: flex;
+}
+
 .product-img {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 300px;
+  max-height: 200px;
 }
 
-.product-img img {
-  max-width: 100%;
-  min-height: 100%;
-}
-
-.product-img img:hover {
-  opacity: 0.8;
-}
-
-.product_name {
+.product-name {
   font-size: 24px;
 }
 
-.price-number {
+.product-price {
   font-size: 18px;
   color: red;
-  line-height: 24px;
-  background-color: red;
 }

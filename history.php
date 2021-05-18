@@ -60,7 +60,7 @@
                       </td>
                       <td><?= $row2['price'] ?></td>
                       <td><?= $row2['count'] ?></td>
-                      <td><?= $row2['price'] ?></td>
+                      <td><?= $subTotal ?></td>
                       <td><a href="#"><i class="trash-icon fas fa-trash-alt"></i></a></td>
                     </tr>
 <?php
