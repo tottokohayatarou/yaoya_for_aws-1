@@ -14,7 +14,7 @@
   <!-- ヘッダー -->
   <div class="head-area">
 
-    <header class="wrapper">
+    <header class="">
       <a href="index.php">
         <div class="logo">
           <div class="logo-icon"><i class="fab fa-canadian-maple-leaf"></i></div>
@@ -49,6 +49,7 @@
       </nav>
       
     </header>
+    </div>
     <?php
       // フラッシュメッセージ
       if (isset($_SESSION['message'])) {
@@ -58,7 +59,6 @@
         unset($_SESSION['message']);
       }
       ?>
-    </div>
     <div class="header-blank"></div>
 
     <script src="js/jquery-3.2.1.min.js"></script>
