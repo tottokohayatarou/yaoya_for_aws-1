@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+
+/* ログインページ */
+.ao{color: rgb(83, 131, 236);}
+.aka{color: rgb(217, 81, 64) ;}
+.kiiro{color: rgb(242, 191, 66) ;}
+.midori{color: rgb(89, 166, 92) ;}
+span{
+  font-size: 5rem;
+}
+.yon{
+  font-size: 4rem;
+}
+.h1 {
+  display: block;
+  width: 300px;
+  letter-spacing: 4px;
+  padding: 0;
+  margin: 150px auto 0;
+}
+
+.center {
+  margin: 0 auto;
+}
+.search-window{
+  /* box-sizing: border-box; */
+  border: 1px solid #dfe1e5;
+  padding: 0 5px;
+  border-radius: 20px;
+  height: 2.0em;
+  width: 584px;
+  height: 46px;
+  overflow: hidden;
+  margin: 20px auto 0;
+}
+
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container input[type="submit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  border: none;
+  background: none;
+  color: #3879D9;
+  outline : none;
+  display: inline-block;
+  /* vertical-align: middle; */
+}
+
+.search-window:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223,225,229,0);
+}
+
+.text-area {
+  width: 526px;
+  height: 46px;
+  padding-left: 20px;
+}
+
+.login-btn {
+  width: 40px;
+  height: 44px;
+}

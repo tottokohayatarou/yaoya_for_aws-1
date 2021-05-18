@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+
+h1 {
+  margin-bottom: 35px;
+}
+
+.container {
+  display: flex;
+}
+
+main {
+  margin-left: 31px;
+  width: 986px;
+}
+
+.shipping-fee-img{
+  width: 100%;
+}

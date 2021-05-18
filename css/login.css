@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+
+/* 共通設定 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* メインエリア */
+.ao {
+  color: rgb(83, 131, 236);
+}
+.aka {
+  color: rgb(217, 81, 64);
+}
+.kiiro {
+  color: rgb(242, 191, 66);
+}
+.midori {
+  color: rgb(89, 166, 92);
+}
+span {
+  font-size: 5rem;
+}
+.yon {
+  font-size: 4rem;
+}
+.login-h1 {
+  width: 262px;
+  letter-spacing: 4px;
+  padding: 0;
+  margin: 150px auto 0;
+}
+
+.signup-h1 {
+  width: 289px;
+  letter-spacing: 4px;
+  padding: 0;
+  margin: 150px auto 0;
+}
+
+.search-window {
+  border: 1px solid #dfe1e5;
+  padding: 0 5px;
+  border-radius: 20px;
+  height: 2em;
+  width: 584px;
+  height: 46px;
+  overflow: hidden;
+  margin: 20px auto 0;
+}
+
+.search-window:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.text-area {
+  width: 526px;
+  height: 46px;
+  padding-left: 20px;
+}
+
+.login-btn {
+  width: 40px;
+  height: 44px;
+}
+
+.login-btn i {
+  color: rgb(83, 131, 236);
+}
+
+
+/* 移動リンクボタンエリア */
+.link-area {
+  width: 280px;
+  /* width: 272px; */
+  margin: 18px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.link-area button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 13.75px;
+    margin: 11px 8px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.link-area button:hover {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.link-area button a {
+  color: #222;
+}
+
+
+/* フラッシュメッセージ */
+.message{
+  height: 42px;
+  padding-top: 9px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: orange;;
+  /* margin-bottom: 10px; */
+}
+
+.none{
+  display: none;
+}

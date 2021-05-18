@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  color: #383838;
+  font-size: 94%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: 1.75;
+  max-width: 48rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 13px;
+}

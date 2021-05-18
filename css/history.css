@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+
+h1 {
+  margin-bottom: 35px;
+}
+
+.container {
+  display: flex;
+}
+
+main {
+  margin-left: 31px;
+  width: 986px;
+  padding: 15px;
+  background-color: #f1f0ec;
+  border-radius: 2px;
+}
+
+.cart {
+  background-color: #f1f0ec;
+  min-height: 80vh;
+  width: 1300px;
+  margin: 55px auto 0;
+  padding-top: 30px;
+}
+
+.cart-title {
+  margin: 0 auto;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.8rem;
+  padding: 0 1rem;
+}
+
+.cart-logo-icon {
+  font-size: 2.8rem;
+  color: green;
+}
+
+.cart-logo-name {
+  padding-left: 4px;
+  font-size: 18.8px;
+  font-family: serif;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 2px;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.cart-detail {
+  width: 836px;
+  margin-left: 11px;
+}
+
+.cart-price-area {
+  width: 403px;
+  margin-right: 19px;
+}
+
+.cart-price-area-top {
+  padding: 1rem;
+  background: #dbd9cf;
+}
+
+.cart-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.cart-table th-tr {
+  width: 820px;
+  padding-top: 5px;
+  margin: 0 auto;
+  border: 1px solid #d4d4d4;
+}
+
+.cart-table tr {
+  vertical-align: middle;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.cart-table th {
+  height: 36px;
+  font-size: 0.85rem;
+  font-weight: normal;
+  background: #dbd9cf;
+}
+
+.cart-table td {
+  text-align: center;
+  font-size: 14px;
+  background-color: white;
+}
+
+.sub-total-tr {
+  height: 40px;
+}
+
+.sub-total-tr td {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.history-total {
+  font-size: 1.1rem;
+}
+.cart-th1 {
+  width: 409px;
+}
+.cart-th2 {
+  width: 82px;
+}
+.cart-th3 {
+  width: 123px;
+}
+.cart-th4 {
+  width: 123px;
+}
+.cart-th5 {
+  width: 82px;
+}
+
+.product-img-cell {
+  display: flex;
+  align-items: center;
+}
+
+.cart-table td a {
+  line-height: 1.75;
+  color: #383838;
+  padding: 8px;
+}
+
+.cart-table td a:hover {
+  color: rgb(163, 131, 75);
+}
+
+.cart-product-img {
+  width: 82px;
+  height: 82px;
+  vertical-align: middle;
+}
+
+.trash-icon {
+  font-size: 23px;
+}

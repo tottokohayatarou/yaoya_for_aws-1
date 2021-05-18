@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+h1 {
+  margin-bottom: 35px;
+}
+
+.container {
+  display: flex;
+}
+
+main {
+  margin-left: 31px;
+  width: 986px;
+  padding: 15px;
+  background-color: #f1f0ec;
+  border-radius: 2px;
+}
+
+.product-img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.product-img img {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.product-img img:hover {
+  opacity: 0.8;
+}
+
+.product_name {
+  font-size: 24px;
+}
+
+.price-number {
+  font-size: 18px;
+  color: red;
+  line-height: 24px;
+  background-color: red;
+}
