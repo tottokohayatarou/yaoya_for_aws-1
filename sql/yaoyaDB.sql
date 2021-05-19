@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: localhost:3306
--- 生成日時: 2021 年 5 月 18 日 18:54
+-- 生成日時: 2021 年 5 月 19 日 21:24
 -- サーバのバージョン： 5.7.32
 -- PHP のバージョン: 7.4.12
 
@@ -30,9 +30,7 @@ CREATE TABLE `favorite` (
 --
 
 INSERT INTO `favorite` (`user_id`, `product_id`) VALUES
-(1, 1),
 (1, 2),
-(1, 6),
 (1, 11);
 
 -- --------------------------------------------------------
@@ -59,8 +57,8 @@ INSERT INTO `product` (`id`, `name`, `price`, `image_name`) VALUES
 (4, '無農薬・無化学肥料・動物性不使用・ ミニトマト/500g ×4パック', 3220, 'tomato.jpg'),
 (5, '【無農薬・無肥料】生命力あふれる旬にんじん', 2200, 'ninhin.jpg'),
 (6, '最高品種！無農薬 北海道産じゃがいも15個', 550, 'imo.jpg'),
-(7, '無農薬・無化学肥料・動物性不使用・ 茄子（固定種）', 420, 'retasu.jpg'),
-(8, '無農薬・無化学肥料・動物性不使用・ 茄子（固定種）', 450, 'nasu.jpg'),
+(7, '無農薬・無化学肥料・動物性不使用・ 茄子（固定種）', 420, 'nasu.jpg'),
+(8, '無農薬・無化学肥料・動物性不使用・ 茄子（固定種） だと思うじゃん？', 39800, 'nasu.jpg'),
 (9, 'レタス/オーガニックエコフェスタ優秀賞受賞‼︎ 有機JAS認定3こセット', 1420, 'retasu.jpg'),
 (10, 'パプリカ/オーガニックエコフェスタ優秀賞受賞‼︎ 有機JAS認定', 890, 'papurika.jpg'),
 (11, 'ただの人参だとおもうな？', 180000, 'ninhin.jpg');
@@ -82,7 +80,13 @@ CREATE TABLE `purchase` (
 
 INSERT INTO `purchase` (`id`, `user_id`) VALUES
 (1, 1),
-(2, 1);
+(2, 1),
+(3, 1),
+(4, 1),
+(5, 1),
+(6, 1),
+(7, 1),
+(8, 1);
 
 -- --------------------------------------------------------
 
@@ -105,7 +109,15 @@ INSERT INTO `purchase_detail` (`purchase_id`, `product_id`, `count`) VALUES
 (1, 3, 3),
 (2, 1, 2),
 (2, 2, 3),
-(2, 3, 1);
+(2, 3, 1),
+(3, 1, 2),
+(5, 2, 4),
+(5, 8, 5),
+(6, 11, 2),
+(7, 1, 8),
+(8, 3, 0),
+(8, 5, 2),
+(8, 9, 0);
 
 -- --------------------------------------------------------
 
@@ -125,17 +137,11 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `password`) VALUES
-(1, 'a', 'a@gmail.com', 'a'),
+(1, '赤松 来樹の裏垢', 'a@gmail.com', 'a'),
 (12, '赤松 来樹', 'akamatsu@gmail.com', 'akamatsupass'),
 (13, '吉田 慶音', 'yosida@gmail.com', 'yoshidapass'),
 (14, '大神 香奈子', 'oogami@gmail.com', 'oogamipass'),
-(15, '松丸 直樹', 'matsumaru@gmail.com', 'matsumarupass'),
-(18, 'Hi', 'Hi@gamil.com', 'Hipass'),
-(19, 'f', 'f@gmail.com', 'f'),
-(20, '', '', ''),
-(21, 'sample', 'sample@gmail.com', 'sample'),
-(22, 'aaa', 'aaa@gmail.com', 'aaa'),
-(23, 'kkk', 'kkkkk@g.com', 'kkk@gmail.com');
+(15, '松丸 直樹', 'matsumaru@gmail.com', 'matsumarupass');
 
 --
 -- ダンプしたテーブルのインデックス
