@@ -91,7 +91,7 @@
             <h1 class="product-name"><?= $row['name'] ?></h1>
             <a href="shipping_fee.php" class="ship-price-link"><i class="far fa-clone"></i> 東京都までの送料 660円〜</a>
             <p class="badge"><img src="images/badge.png"></p>
-            <div class="amount"><?= $row['price'] ?><span class="price-unit">円</span><span class="attention">(送料別)</span></div>
+            <div class="amount"><?= number_format($row['price']) ?><span class="price-unit">円</span><span class="attention">(送料別)</span></div>
             
             <!-- カートへのフォーム -->
             <form action="cart_insert.php" method="post">

@@ -65,7 +65,7 @@
                     <!-- S/M/L -->
                   </div>
                   <div class="price-space">
-                    <span class="price-number"><?= $row['price'] ?></span>
+                    <span class="price-number"><?= number_format($row['price']) ?></span>
                     <span class="price-unit">円</span>
                   </div>
                 </a>

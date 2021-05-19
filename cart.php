@@ -51,9 +51,9 @@ require_once('header.php');
                 <a href="product_detail.php?id=<?= $id ?>"><img class="cart-product-img" src="images/<?= $product['image_name'] ?>" alt=""></a>
                 <a href="product_detail.php?id=<?= $id ?>"><?= $product['name'] ?></a>
               </td>
-              <td><?= $product['price'] ?></td>
+              <td><?= number_format($product['price']) ?></td>
               <td><?= $product['count'] ?></td>
-              <td><?= $subtotal ?></td>
+              <td><?= number_format($subtotal) ?></td>
               <td><a href="cart_delete.php?id=<?= $id ?>"><i class="trash-icon fas fa-trash-alt"></i></a></td>
             </tr>
 <?php
@@ -75,7 +75,7 @@ require_once('header.php');
             <!-- 合計金額を表示 -->
             <div class="cart-subtotal">
               <div class="text">商品合計(税込)</div>
-              <div class="amount"><?= $total ?><span class="price-unit">円</span></div>
+              <div class="amount"><?= number_format($total) ?><span class="price-unit">円</span></div>
             </div>
             
             <!-- 送料の表示と送料一覧へのリンク -->
@@ -95,7 +95,7 @@ require_once('header.php');
           $balance = 10000 - $total; 
           if ($balance > 0) {
 ?>
-            <p class="shipping-info">あと<?= $balance ?><span class="price-unit">円</span>で送料無料</p>
+            <p class="shipping-info">あと<?= number_format($balance) ?><span class="price-unit">円</span>で送料無料</p>
             <a href="index.php" class="shipping-info-return link-hover">
               <span class="arrow-left">
                 <i class="fas fa-angle-double-left"></i>

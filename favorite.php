@@ -59,7 +59,7 @@
                     
                     
                     <div class="price-space">
-                      <span class="price-number"><?= $row['price'] ?></span>
+                      <span class="price-number"><?= number_format($row['price']) ?></span>
                       <span class="price-unit">円</span>
                       <span class="price-tax">／１パッケージ</span>
                     </div>

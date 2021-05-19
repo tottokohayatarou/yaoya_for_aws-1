@@ -58,9 +58,9 @@
                         <a href="product_detail.php?id=<?= $row2['product_id'] ?>"><img class="cart-product-img" src="images/<?= $row2['image_name'] ?>" alt=""></a>
                         <a href="product_detail.php?id=<?= $row2['product_id'] ?>"><?= $row2['name'] ?></a>
                       </td>
-                      <td><?= $row2['price'] ?></td>
+                      <td><?= number_format($row2['price'])  ?></td>
                       <td><?= $row2['count'] ?></td>
-                      <td><?= $subTotal ?></td>
+                      <td><?= number_format($subTotal) ?></td>
                       <!-- <td><a href="#"><i class="trash-icon fas fa-trash-alt"></i></a></td> -->
                     </tr>
 <?php
@@ -70,7 +70,7 @@
                       <td></td>
                       <td></td>
                       <td>合計</td>
-                      <td class="history-total"><?= $total ?>円</td>
+                      <td class="history-total"><?= number_format($total) ?>円</td>
                       <!-- <td></td> -->
                     </tr>
 <?php
