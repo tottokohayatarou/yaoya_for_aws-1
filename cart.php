@@ -40,6 +40,9 @@ require_once('header.php');
 <?php
           $total = 0;
           foreach ($_SESSION['product'] as $id => $product) {
+            if ($product['count'] === 0) {
+              $product['count'] = 1;
+            }
             $subtotal = $product['price'] * $product['count'];
             $total += $subtotal;
 ?>
@@ -93,7 +96,12 @@ require_once('header.php');
           if ($balance > 0) {
 ?>
             <p class="shipping-info">あと<?= $balance ?><span class="price-unit">円</span>で送料無料</p>
-            <a href="index.php" class="shipping-info-return link-hover"><span class="arrow-left"><i class="fas fa-angle-double-left"></i></span> るる自然農園の商品を見る</a>
+            <a href="index.php" class="shipping-info-return link-hover">
+              <span class="arrow-left">
+                <i class="fas fa-angle-double-left"></i>
+              </span>
+              るる自然農園の商品を見る
+            </a>
             <?php
           } else {
 ?>              
@@ -103,7 +111,7 @@ require_once('header.php');
           }
 ?>
             <!-- 購入ボタン -->
-            <button class="buy-button">ご購入手続きにすすむ <i class="fas fa-angle-double-right"></i></button>
+            <a href="purchase_input.php"><button class="buy-button">ご購入手続きにすすむ <i class="fas fa-angle-double-right"></i></button></a>
           </div>
 
 

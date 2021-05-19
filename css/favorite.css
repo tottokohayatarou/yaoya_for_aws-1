@@ -81,6 +81,21 @@ main {
   opacity: 1;
   box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
+.delete-button {
+  margin-top: 20px;
+  background-color: #a98948;
+  opacity: 0.8;
+  color: #fff;
+  height: 45px;
+  width: 250px;
+  border-radius: 7px;
+}
+
+.delete-button:hover {
+  background-color: #a98948;
+  opacity: 1;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
 
 .price-number {
   font-size: 26px;

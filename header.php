@@ -24,7 +24,7 @@
       
       <nav class="main-nav">
         <div class="serch-field">
-          <form action="index.php" method="GET">                                     <!--後でメソッドポストに変更する-->
+          <form action="index.php" method="post">                                     <!--後でメソッドポストに変更する-->
           <input type="text"   class="search-window" name="keyword" placeholder="商品検索"><button type="submit" class="search-button"><i class="fas fa-search"></i></button>
         </form>
       </div>

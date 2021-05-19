@@ -2,7 +2,7 @@
   session_start();
 
 
-  unset($_SESSION['product'][$_REQUEST['id']]);
+  unset($_SESSION['product'][$_GET['id']]);
   $_SESSION['message'] = 'カートから商品を削除しました。';
 
 

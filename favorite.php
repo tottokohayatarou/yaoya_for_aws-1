@@ -48,13 +48,13 @@
         
                 <div class="container cont2">
                   <div class="item1">
-                    <a href="#">
+                    <a href="product_detail.php?id=<?= $row['id'] ?>">
                       <img class="course-image" src="images/<?= $row['image_name'] ?>"> </img>
                     </a>
                   </div>
         
                   <div class="item2 flex-dir-col">
-                    <a href="#" class="product-name border-bottom"><?= $row['name'] ?></a>
+                    <a href="product_detail.php?id=<?= $row['id'] ?>" class="product-name border-bottom"><?= $row['name'] ?></a>
                     <p class="">最短翌日出荷</p>
                     
                     
@@ -66,7 +66,17 @@
                   </div>
         
                   <div class="item3">
-                    <a href="cart.php"><button class="button">カートに入れる</button></a>
+                    <form action="cart_insert.php" method="post">
+                      <button class="button">カートに入れる</button>
+                      <input type="hidden" name="count" value="1">
+                      <input type="hidden" name="id" value="<?= $row['id'] ?>">
+                      <input type="hidden" name="name" value="<?= $row['name'] ?>">
+                      <input type="hidden" name="price" value="<?= $row['price'] ?>">
+                      <input type="hidden" name="image_name" value="<?= $row['image_name'] ?>">
+                    </form>
+                    <a href="favorite_delete.php?id=<?= $row['id'] ?>">
+                      <button class="delete-button">削除</button>
+                    </a>
                   </div>
                 </div>
             </div>

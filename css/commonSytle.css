@@ -14,6 +14,11 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: rgb(163, 131, 75);
+
+}
+
 p {
   line-height: 1.75;
   max-width: 48rem;
@@ -21,6 +26,10 @@ p {
 
 ul {
   list-style: none;
+}
+
+img:hover {
+  opacity: 0.8;
 }
 
 .wrapper {

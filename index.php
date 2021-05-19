@@ -40,9 +40,18 @@
         <div class="products">
           <div class="grid">
 <?php
+            // POSTデータの有無で商品一覧と商品検索処理に分岐
             require 'db_connect.php';
-            $sql = "select * from product ";
-            $stm = $pdo->prepare($sql);
+            if (isset($_POST['keyword'])) {
+              $sql = "select * from product where name like :keyword";
+              $stm = $pdo->prepare($sql);
+              $stm->bindValue(':keyword', '%' . $_POST['keyword'] . '%', PDO::PARAM_STR);
+              // $stm->execute();
+              // $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+            } else {
+              $sql = "select * from product";
+              $stm = $pdo->prepare($sql);
+            }
             $stm->execute();
             $result = $stm->fetchAll(PDO::FETCH_ASSOC);
 
