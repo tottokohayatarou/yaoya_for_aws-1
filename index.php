@@ -4,6 +4,175 @@
   <head>
     <link rel="stylesheet" href="css/index.css" />
     <title>野菜を採るなら大原♪｜トップ</title>
+    <style>
+      * {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  color: #383838;
+  font-size: 94%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: rgb(163, 131, 75);
+
+}
+
+p {
+  line-height: 1.75;
+  max-width: 48rem;
+}
+
+ul {
+  list-style: none;
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 26px auto 0;
+  padding: 0 13px;
+}
+
+.price-unit {
+  font-size: 0.88em;
+}
+.attention{
+  font-size: 0.68em;
+}
+
+.container {
+  display: flex;
+  /* margin-top: 31px; */
+}
+
+/* メイン */
+main {
+  padding-left: 31px;
+}
+
+
+/* メインビジュアル */
+.main-visual {
+  width: 986px;
+  height: 112px;
+  background-image: url("images/image.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 1.8rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.main-visual h1 {
+  padding: 0.4rem;
+  font-size: 1.375rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 1.3;
+  color: white
+}
+
+.main-visual p {
+  margin-top: 8px;
+  font-size: 10px;
+  color: white;
+  margin: 0 auto;
+}
+
+.site-description {
+  margin: 48px auto 48px;
+}
+
+
+/* ソートメニュー */
+.sort-menu ul {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.sort-menu ul li {
+  height: 40px;
+}
+
+.sort-menu ul li button{
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: inherit;
+  text-align: center;
+  color: #383838;
+  height: 17px;
+  vertical-align: middle;
+  padding: 8px 15px;
+}
+
+.sort-menu ul li:hover{
+  background-color: rgb(227, 227, 227);
+}
+
+
+/* 商品一覧 */
+.grid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+}
+
+.products-img {
+  width: 287px;
+  height: 215px;
+}
+
+.grid a {
+  color: #383838;
+  font-family: serif;
+}
+
+.grid a:hover {
+  color: rgb(163,131,75);
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 18px;
+  max-width: 287px;
+}
+
+.quantity {
+  font-size: 16px;
+  max-width: 287px;
+}
+
+/* 値段表示 */
+.price-space {
+  font-family: sans-serif;
+  margin-top: 7px;
+  max-width: 287px;
+}
+
+.price-number {
+  font-size: 18px;
+  font-weight: 520;
+}
+.price-unit{
+  font-size: 0.88rem;
+}
+
+
+    </style>
   </head>
   <body>
     <div class="wrapper container">

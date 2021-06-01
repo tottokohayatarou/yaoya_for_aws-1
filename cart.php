@@ -84,7 +84,7 @@ require_once('header.php');
               <div class="price">
                 <span class="sub-amount">660<span class="price-unit"><span class="price-unit">円</span>~
                   <div class="fontsize-mini">お届け先により変動</div>
-                  <a href="#" class="ship-price-link"><i class="far fa-clone"></i> 詳しい送料はこちら</a>
+                  <a href="shipping_fee.php" class="ship-price-link"><i class="far fa-clone"></i> 詳しい送料はこちら</a>
                 </span>
               </div>
             </div>

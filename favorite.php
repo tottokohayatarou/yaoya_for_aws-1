@@ -10,6 +10,22 @@
     header("Location:" . $url);
     exit();
   }
+  
+  require 'db_connect.php';
+  $sql = "select * from favorite, product where user_id = :user_id and product_id = id";
+  $stm = $pdo->prepare($sql);
+  $stm->bindValue(':user_id', $_SESSION['user']['id'], PDO::PARAM_STR);
+  $stm->execute();
+  $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+  if (empty($result)) {
+    $_SESSION['message'] = 'お気に入りに商品が登録されていません。';
+    $url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . '/index.php';
+  
+    // リダイレクト
+    header("Location:" . $url);
+    exit();
+  }
+  
 ?>
 <?php require_once('header.php') ?>
 <!DOCTYPE html>
@@ -30,13 +46,6 @@
       <main>
         <h1>お気に入り</h1>
 <?php
-          require 'db_connect.php';
-          $sql = "select * from favorite, product where user_id = :user_id and product_id = id";
-          $stm = $pdo->prepare($sql);
-          $stm->bindValue(':user_id', $_SESSION['user']['id'], PDO::PARAM_STR);
-          $stm->execute();
-          $result = $stm->fetchAll(PDO::FETCH_ASSOC);
-
           foreach ($result as $row) {
 ?>
             <!-- <div class="container"> -->

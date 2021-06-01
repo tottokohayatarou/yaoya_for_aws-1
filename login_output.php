@@ -1,6 +1,5 @@
 <?php session_start(); ?>
 <?php require('db_connect.php'); ?>
-
 <?php
   require_once('db_connect.php');//DB接続
   unset($_SESSION['user']);//userセッション変数を破棄

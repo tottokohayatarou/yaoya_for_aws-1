@@ -12,6 +12,10 @@
     $count = $_SESSION['product'][$id]['count'];
   }
 
+  if (empty($_POST['count'])) {
+    $_POST['count'] = 1;
+  }
+
 
   $_SESSION['product'][$id] = [
     'name' => $_POST['name'],
