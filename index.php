@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <link rel="stylesheet" href="css/index.css" />
+    <!-- <link rel="stylesheet" href="css/index.css" /> -->
     <title>野菜を採るなら大原♪｜トップ</title>
     <style>
       * {
